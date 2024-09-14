@@ -1,3 +1,4 @@
+
 # FaceSync
 
 ![FaceSync Banner](https://via.placeholder.com/800x200.png?text=FaceSync+Banner)
@@ -15,7 +16,7 @@
 
 ## Introduction
 
-**FaceSync** is a powerful tool designed to transfer facial animations from one video (Driving) to another (Driven). Whether you're looking to create deepfake videos, enhance animations, or synchronize expressions, FaceSync provides an intuitive graphical user interface (GUI) to simplify the process.
+**FaceSync** is a powerful tool designed to transfer facial animations from one video (**Driving**) to another (**Driven**). Whether you're looking to create realistic deepfake videos, enhance animations, or synchronize expressions, FaceSync provides an intuitive graphical user interface (GUI) to simplify the process.
 
 ## Features
 
@@ -44,89 +45,118 @@ Follow these steps to set up **FaceSync** on your Ubuntu system.
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/FaceSync.git
    cd FaceSync
-Install Python Packages
+   ```
 
-bash
-Copy code
-sudo apt update
-sudo apt install python3-pip python3-tk
-pip3 install -r requirements.txt
-If you don't have a requirements.txt, you can manually install the necessary packages:
+2. **Install Python Packages**
 
-bash
-Copy code
-pip3 install tkinter configparser
-Run the Installation Script
+   ```bash
+   sudo apt update
+   sudo apt install python3-pip python3-tk
+   pip3 install -r requirements.txt
+   ```
 
-bash
-Copy code
-./install.sh
-This will create an installed.txt file to signify successful installation.
+   *If you don't have a `requirements.txt`, you can manually install the necessary packages:*
 
-Set Up the Execution Loop
+   ```bash
+   pip3 install tkinter configparser
+   ```
 
-Ensure that run_loop.sh is executable:
+3. **Run the Installation Script**
 
-bash
-Copy code
-chmod +x run_loop.sh
-Start the Application
+   ```bash
+   ./install.sh
+   ```
 
-bash
-Copy code
-./run_loop.sh
-Usage
-Launching the GUI
+   *This will create an `installed.txt` file to signify successful installation.*
 
-Run the following command to open the FaceSync GUI:
+4. **Set Up the Execution Loop**
 
-bash
-Copy code
-python3 GUI.py
-Selecting Files
+   Ensure that `run_loop.sh` is executable:
 
-Driven File: The video whose face you want to animate.
-Driving File: The video providing the facial movements.
-Output File: Specify the location and name for the resulting video.
-Starting the Process
+   ```bash
+   chmod +x run_loop.sh
+   ```
 
-Click the "Start FaceSync" button to begin the facial animation transfer. The application will handle the processing and save the output video to your specified location.
+5. **Start the Application**
 
-Configuration
-FaceSync uses a config.ini file to store your project settings. This ensures that your selected files and preferences are saved for future use.
+   ```bash
+   ./run_loop.sh
+   ```
 
-config.ini Structure
-ini
-Copy code
+## Usage
+
+1. **Launching the GUI**
+
+   Run the following command to open the FaceSync GUI:
+
+   ```bash
+   python3 GUI.py
+   ```
+
+2. **Selecting Files**
+
+   - **Driven File:** The video whose face you want to animate.
+   - **Driving File:** The video providing the facial movements.
+   - **Output File:** Specify the location and name for the resulting video.
+
+3. **Starting the Process**
+
+   Click the **"Start FaceSync"** button to begin the facial animation transfer. The application will handle the processing and save the output video to your specified location.
+
+## Configuration
+
+FaceSync uses a `config.ini` file to store your project settings. This ensures that your selected files and preferences are saved for future use.
+
+### `config.ini` Structure
+
+```ini
 [OPTIONS]
 Driven_file = /path/to/driven_video.mp4
 Driving_file = /path/to/driving_video.mp4
 Output_file = /path/to/output_video.mp4
-You can manually edit this file if needed or use the GUI to manage configurations.
+```
 
-Contributing
+*You can manually edit this file if needed or use the GUI to manage configurations.*
+
+## Contributing
+
 Contributions are welcome! If you'd like to improve FaceSync, please follow these steps:
 
-Fork the Repository
+1. **Fork the Repository**
 
-Create a Feature Branch
+2. **Create a Feature Branch**
 
-bash
-Copy code
-git checkout -b feature/YourFeatureName
-Commit Your Changes
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
 
-bash
-Copy code
-git commit -m "Add Your Feature"
-Push to the Branch
+3. **Commit Your Changes**
 
-bash
-Copy code
-git push origin feature/YourFeatureName
-Open a Pull Request
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
 
-Provide a clear description of your changes and why they're beneficial.
+4. **Push to the Branch**
 
-License
-This project is licensed under the MIT License.
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Open a Pull Request**
+
+   Provide a clear description of your changes and why they're beneficial.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Support
+
+If you encounter any issues or have questions, feel free to open an issue on [GitHub Issues](https://github.com/YOUR_GITHUB_USERNAME/FaceSync/issues) or visit our [support page](https://github.com/YOUR_GITHUB_USERNAME/FaceSync#support).
+
+---
+
+**Enjoy using FaceSync!**
+```
+
+
